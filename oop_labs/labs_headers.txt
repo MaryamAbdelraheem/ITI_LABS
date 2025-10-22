@@ -1,0 +1,8 @@
+lab 1 ->
+lab 2 ->
+lab 3 ->
+lab 4 ->
+//since lab 5 :
+- start with the main function and declare all used function before it for clean and organized code.
+- comments are declration only for main parts of the tasks.
+lab 5 -> tasks mainly on pointers .
