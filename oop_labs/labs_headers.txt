@@ -6,3 +6,11 @@ lab 4 ->
 - start with the main function and declare all used function before it for clean and organized code.
 - comments are declration only for main parts of the tasks.
 lab 5 -> tasks mainly on pointers .
+lab 6 -> oop principles 
+- class emp(id, name, age ,salary) print 
+- class ba(id name,balance) => getters, setters 
+- class complex
+real, img, setters, getters, print 
+member function add 
+standalone function subtract 
+standalone print
