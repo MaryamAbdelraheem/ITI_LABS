@@ -1,12 +1,12 @@
-lab 1 ->
-lab 2 ->
-lab 3 ->
-lab 4 ->
+** lab 1 ** ->
+** lab 2 ** ->
+** lab 3 ** ->
+** lab 4 ** ->
 //since lab 5 :
 - start with the main function and declare all used function before it for clean and organized code.
 - comments are declration only for main parts of the tasks.
 lab 5 -> tasks mainly on pointers .
-lab 6 -> oop principles 
+** lab 6 ** -> oop principles 
 - class emp(id, name, age ,salary) print 
 - class ba(id name,balance) => getters, setters 
 - class complex
@@ -14,3 +14,18 @@ real, img, setters, getters, print
 member function add 
 standalone function subtract 
 standalone print
+
+** lab 7 ** ->
+1. 2 pram id name 3 pram id name age 4 p id name age salary
+
+2. Constrctor in conplex -> use the default arg 
+
+3. Class stack and function 
+Give it stack and it empty the stack 
+Arr dynamic allocated
+
+4. Class implemet the Queue FIFO 
+EnQueue and dequeue index 
+
+Use 2 indexes one for entering and one for removing for fixing O(n) problem .
+
