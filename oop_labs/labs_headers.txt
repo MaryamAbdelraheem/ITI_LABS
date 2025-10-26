@@ -2,6 +2,8 @@
 ** lab 2 ** ->
 ** lab 3 ** ->
 ** lab 4 ** ->
+
+
 //since lab 5 :
 - start with the main function and declare all used function before it for clean and organized code.
 - comments are declration only for main parts of the tasks.
@@ -28,4 +30,8 @@ Arr dynamic allocated
 EnQueue and dequeue index 
 
 Use 2 indexes one for entering and one for removing for fixing O(n) problem .
-
+** lab 8 ** ->
+1.fib -> recursion
+2.copy constructor on stack
+3.class - composition relationship
+4.class - aggregation relationship
