@@ -4,11 +4,13 @@
 ** lab 4 ** ->
 
 
-//since lab 5 :
+//since lab 5 :///////////////////////////////////////////////////////////////
 - start with the main function and declare all used function before it for clean and organized code.
 - comments are declration only for main parts of the tasks.
-lab 5 -> tasks mainly on pointers .
-** lab 6 ** -> oop principles 
+
+lab 5 -> tasks mainly on pointers .-----------------------------------------------------------------------------
+
+** lab 6 ** -> oop principles -------------------------------------------------------------------------------
 - class emp(id, name, age ,salary) print 
 - class ba(id name,balance) => getters, setters 
 - class complex
@@ -17,7 +19,7 @@ member function add
 standalone function subtract 
 standalone print
 
-** lab 7 ** ->
+** lab 7 ** ->----------------------------------------------------------------------------------------------------
 1. 2 pram id name 3 pram id name age 4 p id name age salary
 
 2. Constrctor in conplex -> use the default arg 
@@ -30,8 +32,35 @@ Arr dynamic allocated
 EnQueue and dequeue index 
 
 Use 2 indexes one for entering and one for removing for fixing O(n) problem .
-** lab 8 ** ->
+
+** lab 8 ** ->----------------------------------------------------------------------------------------------
 1.fib -> recursion
 2.copy constructor on stack
 3.class - composition relationship
 4.class - aggregation relationship
+
+** lab 9 ** ->-----------------------------------------------------------------------------------------------
+1. classes                     //const - setters - getters - print//
+-base: person (id,name,age) 
+- employee (+salary) 
+- student (+grade)
+
+2. shape class: 
+attr -> dim 1,dim2
+const -> 1. (dim1,dim2)&(dim1 we equla eltani),()
+        + rec (dim1!=dim2), tring(!=) circle (=)
+
+3. menu
+new -> push
+display -> pop
+peak -> print last elem
+is full->
+is empty->
+
+
+4. magic box : make class and object from it will init.
+
+5.fractions : GCD(to keep fractions in the simplest form)
+Add2fractions()جمع الكسور
+
+** lab 10 ** ->----------------------------------------------------------------------------------------------------
