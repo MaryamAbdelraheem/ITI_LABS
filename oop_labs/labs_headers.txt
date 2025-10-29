@@ -64,3 +64,22 @@ is empty->
 Add2fractions()جمع الكسور
 
 ** lab 10 ** ->----------------------------------------------------------------------------------------------------
+Today's Tasks:
+1. Parent (x,y), child(2)
+        1. Parent:: virtual add (x,y)
+        2. child:: override add (x,y,z)
+2. shapes
+        1. circle, square
+        2. array of shapes
+        3. Print(Shape*) => Print shape
+
+Saturday's Task:
+1. Stack of Operations
+1. stack for Integers
+2. Stack for Operations
+3. check precedence
+        1. read string char by char
+        2. if the current char is an operation && has higher precedence than the last operation in the stack:
+                • Push it
+                • else: doPreviousOperation®:
+        3. if string ends >> start do PreviousOperation till the stack is empty.
