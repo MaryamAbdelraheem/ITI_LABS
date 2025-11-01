@@ -83,3 +83,5 @@ Saturday's Task:
                 • Push it
                 • else: doPreviousOperation®:
         3. if string ends >> start do PreviousOperation till the stack is empty.
+
+lab 11 : class complex static member : copy , destructor , const
