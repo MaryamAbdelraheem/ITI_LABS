@@ -1,0 +1,653 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Whole navbar */
+/* General Navbar Styling */
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  background-color: #fff;
+}
+
+/* Top row */
+.navbar-top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.logo {
+  background-color: #e60012; 
+  padding: 10px;             
+  display: inline-block;     
+  vertical-align: middle;
+  border-radius: 0px;
+}
+
+.logo img {
+  width: 90px;               
+  height: auto;              
+  display: block;            
+}
+
+.search-bar {
+  display: inline-block;           
+  border-bottom: 2px solid #ccc;   
+  padding: 6px 10px;
+  margin-left: 25px;
+  color: #555;
+}
+
+/* The input + icon area */
+.search-input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search-input .search-icon {
+  font-size: 18px;
+  color: #555;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+
+.search-input input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 250px;
+}
+
+/* The categories dropdown label */
+.categories {
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  vertical-align: middle;
+
+}
+
+.categories .arrow {
+  margin-left: 4px;
+  font-size: 14px;
+
+}
+
+.links{
+  padding: 6px 25px  ;
+  margin-left: 750px;
+}
+.links a {
+  text-decoration: none;
+  color: #434242;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+
+}
+
+/* Middle row (main nav) */
+.navbar-middle {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+
+.navbar-middle a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-middle a:hover {
+  color: #d40000;
+  text-decoration: underline;
+}
+
+
+/* Bottom row (offers) */
+.navbar-bottom {
+  text-align: center;
+  font-size: 14px;
+  background-color: #efefef;
+  color: #444;
+  padding: 8px;
+  border-top: 1px solid #eee;
+}
+
+.icons{
+  width: 22px;              /* consistent small size */
+  height: 22px;
+  vertical-align: middle;   /* aligns icons with text */
+  margin-right: 6px; 
+}
+
+/*---------------------------------------------------*/
+
+
+.background{
+  background-color: #d6f0fa;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+   
+}
+
+.introCard{
+  width: 70%;
+  height: 600px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 50px 250px ;
+  text-align: left; 
+}
+
+/*---------------------------------------------------*/
+
+.left_side{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  
+}
+
+.left_side img{
+  width: 550px;
+  height: 325px;
+  margin:  10px 25px;
+}
+
+.left_side p{
+  margin: 10px 20px 10px 25px  ;
+  color: #d0c9c9;
+}
+.left_side b{
+  color: #434242;
+}
+
+.left_side td{
+  width: 81.5px;
+  height: 60px;
+  padding: 0px 5px;
+}
+table td:first-child {
+  padding-left: 0;
+}
+.left_side .imgs{
+  width: 100%;
+  height: 100%;
+}
+
+.left_side .rating{
+  height: 70px;
+  width: 50px;
+  display: inline-block;
+
+}
+
+.left_side .rating-text{
+  text-align: top;
+  display: inline-block;
+  color: #d0c9c9;
+}
+.rating-text {
+    font-size: 12px;
+    line-height: 1.25;
+    vertical-align: top;
+    margin: 20px 0px;
+  }
+
+  .divider {
+    border-top: 1px solid #d0c9c9;
+    margin: 6px 0;
+    width: 25%;
+  }
+
+  .subtext {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+/*---------------------------------------------------*/
+
+.right_side{
+  
+  margin:  10px 0px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.right_side .head{
+  margin: 50px 0px 5px 0px  ;
+  color: #d0c9c9;
+  text-decoration:underline;
+  text-decoration-color: #e60012;
+}
+
+.right_side .product{
+  margin-top: 50px;
+}
+
+.right_side .price{
+  margin-top: 100px;
+  display: inline-block;
+}
+.right_side img{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 350px;
+}
+.right_side .coin{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 0px;
+  margin-right: 5px;
+
+}
+.right_side .points,.ending{
+  font-size: smaller;
+  color: #d0c9c9;
+}
+
+.right_side .button{
+  text-align: center;
+  background-color: #e60012;
+  padding: 15px;
+  color: #efefef;
+}
+
+/*---------------------------------------------------*/
+
+.center{
+  width: 70%;
+  height: 350px;
+  display: inline-block;
+  margin: 12px 250px ;
+  text-align: left; 
+}
+
+.center .paragraph{
+  width: 45%; 
+  vertical-align: top;
+  display: inline-block;
+  color: #d0c9c9;
+  font-size: smaller;
+  vertical-align: middle;
+  line-height: 1.75;
+  padding: 25px;
+}
+.center .img{
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  padding: 25px;
+}
+
+.img img{
+  width: 500px;
+  height: 300px;
+}
+
+.center .readmore{
+  color:#e60012;
+  font-weight: bold;
+}
+
+.readmore img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/*---------------------------------------------------*/
+
+.raiting_support{
+  width: 70%;
+  height: 400px;
+  background-color: #ffffff;
+  display: inline-block;
+  margin: 25px 250px 2px 250px ;
+ text-align: left;
+}
+
+.left{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  width:  45%;
+  height: 300px;
+  background-color: #efefef;
+  text-align: center;
+  border-radius: 9px;
+  margin: 10px;
+}
+.right{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  width:  45%;
+  height: 300px;
+  background-color: #efefef;
+  margin: 10px;
+  text-align: center;
+  border-radius: 9px;
+}
+
+.left p{
+  color: #434242;
+  margin-top: 50px;
+
+}
+
+.left img{
+  width:450px ;
+  height: 150px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.right {
+  text-align: center; 
+  white-space: nowrap; 
+  background-color: #efefef; 
+  padding: 10px;
+  margin: 10px 0px ;
+}
+
+.right .card {
+  display: inline-block;  
+  vertical-align: center;    
+  width: 120px;   
+  height: 100px;        
+  margin: 100px 5px;         
+  background-color:#284c95;
+  padding: 10px;    
+  border-radius: 5px;
+}
+
+.right .card img {
+  width: 120px;  
+  height: auto; 
+  display: block; 
+  margin: 15px 0px;
+}
+
+/*---------------------------------------------------*/
+
+.table-section table{
+
+  margin: 0px 260px;
+
+}
+table td{
+  border-bottom: 0.5px solid #d0c9c9;
+  width: 10px;
+  height: 2px;
+  text-align: left;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.table-section .img-table{
+  height: 20px;
+  width: 20px;
+
+}
+
+.table-section .data{
+  width: 530px;
+}
+
+.table-section .highlight{
+  font-weight: bold;
+  color: #e60012;
+  text-decoration: underline;
+}
+
+/*---------------------------------------------------*/
+
+.online {
+  background-color: #f8f8f8;
+  width: 70%;
+  height: 300px;
+  margin: 50px 260px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative; /* make it a reference for absolute positioning */
+}
+.online .online-img{
+  width: 25%;
+  height: 200px;
+  margin: -50px 20px 10px 20px;
+}
+
+.online h3{
+  margin-left: 20px;
+  margin-top: -20px;
+  color: #434242;
+}
+
+.online .button{
+  background-color: #e60012;
+  color: #efefef;
+  text-align: center;
+  padding: 10px;
+  width: 90px;
+  height: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.switch {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 50px;   /* adjust vertically */
+  right: 30px; /* push to right */
+}
+
+/*---------------------------------------------------*/
+
+.head-h1{
+  color: #434242;
+  padding-left: 260px;
+}
+
+/*---------------------------------------------------*/
+
+.table-vg {
+  margin-left: 260px;
+  display: block;           /* خليه block مش inline-block */
+  width: 70%;
+  height: 350px;
+  text-align: center;       /* عشان inline-blocks يتصفوا في النص */
+  white-space: nowrap;      /* يمنعهم ينزلوا تحت بعض */
+  border-radius: 8px;
+}
+
+.table-vg .card {
+  background-color: #fff;
+  display: inline-block;    /* يخليهم جنب بعض */
+  vertical-align: top;      /* يخليهم على نفس الخط */
+  width: 23%;
+  height: 350px;
+  margin: 30px 10px;        /* مسافة بسيطة بين الكروت */
+  border: 0.25px solid #434242;
+  border-radius: 5px;
+}
+
+.card img{
+  width: 100%;
+  height: 170px;
+  border-radius: 5px;
+}
+
+.card p{
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.card .price1{
+    margin-top: 80px;
+}
+.card .sale{
+  color: #efefef;
+  background-color: #d40000;
+  border-radius: 20px 0px 0px 20px;
+  text-align: center;
+  width: 50px;
+
+}
+.card .price{
+  margin-top: 26px;
+}
+
+.card .small-head{
+  font-size: smaller;
+  color: #d0c9c9;
+  text-decoration: underline;
+  text-decoration-color:#e60012;
+  display: inline-block;
+  margin-left: -10px;
+}
+
+.card .like{
+  width: 20px;  
+  height: auto; 
+  display: block; 
+  margin: 0px 0px 0px 120px;
+  display: inline-block;
+}
+/*---------------------------------------------------*/
+
+.table-caption{
+  font-size: smaller;
+  color: #d0c9c9;
+  margin: 80px 0px 10px 250px
+}
+
+.banner{
+  width: 100%;
+  height: 100px;
+  margin: 30px 0px;
+}
+
+/*---------------------------------------------------*/
+
+.parent {
+ 
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  font-size: 0;
+}
+
+.parent > div,
+.col,
+.col2 {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  width: 12%;
+  margin: 0 10px;
+  margin-top: 15px;
+  font-size: 16px; /* نص العادي */
+  text-align: left; /* يخلي الكتابة جوه البوكس */
+  padding: 10px;
+  height: auto;
+  border-left: 0.25px solid #333; /* border-left فقط */
+}
+
+/* إلغاء line-height الثابت */
+.parent > div p,
+.div5 p,
+.div6 p,
+.div7 p {
+line-height: normal;
+  margin: 5px 0;
+}
+
+/* العنوان */
+.parent > div p:first-child,
+.div5 p:first-child,
+.div6 p:first-child,
+.div7 p:first-child {
+  font-weight: bold;
+  color: #000; /* أسود */
+  font-size: 18px;
+}
+
+/* الكلام اللي تحت */
+.parent > div  p:nth-child(2),
+
+.div5 p:nth-child(2),
+.div6 p:nth-child(2),
+.div7 p:nth-child(2) {
+  font-weight: bold;
+  color: #e60012; /* أحمر */
+}
+
+/* الأعمدة الطويلة */
+.div1, .div2, .div3, .div4 {
+  height: 315px;
+}
+
+/* العمود الذي يحتوي 5 و 6 */
+.col {
+  font-size: 0;
+  height: auto;
+}
+
+.div5, .div6 {
+  background-color: #fff;
+  border-left: 0.25px solid #333;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.div6 {
+  margin-top: 10px;
+}
+
+/* div 7 */
+.col2 {
+  height: auto;
+}
+
+.div7 {
+  padding: 10px;
+
+}
+
+.padge{
+  width:60px ;
+  height: 100px;
+margin-left: 1550px;
+
+}
+
+.footer{
+  width: 100%;
+  height: 60px;
+  margin: 30px 0px;
+}
