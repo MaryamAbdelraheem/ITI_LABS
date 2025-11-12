@@ -11,6 +11,7 @@ public:
 Complex (int _real=0, int _img=0){
     real=_real;
     img = _img;
+    
 }
 
 //copy constructor 
@@ -77,11 +78,9 @@ Complex (Complex& r){
         return *this;
     }
 
-     Complex operator++(int){ //postfix
-
-        Complex res(real,img); //local data
+     Complex& operator++(int){ //postfix
         real++;
-        return res;
+        return *this;
     }
 
     explicit operator int(){

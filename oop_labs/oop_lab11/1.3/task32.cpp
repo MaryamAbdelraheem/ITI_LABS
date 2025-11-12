@@ -5,7 +5,8 @@ class Fraction {
     int num, den;
 public:
     Fraction(int n=0, int d=1) { 
-        num = n; den = (d==0)?1:d; 
+        num = n; 
+        den = (d==0)?1:d; 
     }
 
     void print() { 
