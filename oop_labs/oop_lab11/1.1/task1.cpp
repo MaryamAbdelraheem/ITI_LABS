@@ -59,8 +59,7 @@ static int getCounter(){
     return no;
 }
 
-friend void myfunc(Complex r);
-
+friend void myfunc(Complex r){};
 };
 //define static var
 int Complex::no=0;

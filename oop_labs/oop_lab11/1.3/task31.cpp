@@ -4,8 +4,12 @@ using namespace std;
 class Complex {
     int real, img;
 public:
-    Complex(int r=0, int i=0) { real = r; img = i; }
-    Complex(const Complex &c) { real = c.real; img = c.img; }
+    Complex(int r=0, int i=0) { 
+        real = r; img = i; 
+    }
+    Complex(const Complex &c) { 
+        real = c.real; img = c.img;
+    }
 
     void print() {
         if (img >= 0) cout << real << "+" << img << "j";
@@ -15,6 +19,7 @@ public:
     Complex operator+(Complex c) { return Complex(real + c.real, img + c.img); }
     Complex operator+(int n) { return Complex(real + n, img); }
 
+    ///
     friend Complex operator+(int n, Complex c) {
         return Complex(c.real + n, c.img);
     }
