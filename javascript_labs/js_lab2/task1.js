@@ -127,7 +127,6 @@
     //1.7
 
 /*
-
 (getStudentGrades = ()=>{
     let grade = 0;
     let degree = 0;
@@ -149,9 +148,7 @@
     }
 
 })();
-
 */
-
 
 
         

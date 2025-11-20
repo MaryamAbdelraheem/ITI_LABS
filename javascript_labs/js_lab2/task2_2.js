@@ -30,3 +30,11 @@
 //plindrome_checker();
 
 //count_vowel();
+//-----------------------------
+//title_case();
+//masking();
+
+
+//longest_word();
+
+//remove_repeated_chars();
