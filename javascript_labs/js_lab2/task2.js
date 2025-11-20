@@ -201,4 +201,82 @@ function count_vowel() {
 
     alert(`Number of vowels: ${count}`);
 }
+//level 4==================================================
+//4.1
+function title_case(){
+    let input = prompt("Enter your full name:");
+    let result = "";
+    let capitalize_next = true;
+
+    for (let i = 0; i < input.length; i++) {
+        let char = input[i];
+
+        if (char === " ") {
+            result += " ";
+            capitalizeNext = true;
+        } else if (capitalizeNext) {
+            result += char.toUpperCase();
+            capitalizeNext = false;
+        } else {
+            result += char.toLowerCase();
+        }
+    }
+
+    console.log("Hello, " + result + "!");
+}
+
+//4.2
+function masking(){
+    let input = prompt("Enter a phone number (e.g., 01098987876):");
+    let mask="";
+    for(var i =0; i<input.length;i++){
+        if(i < input.length-4)
+            mask+="*"
+        else
+            mask+= input[i];
+    }
+    console.log(mask);
+}
+
+//4.3
+function longest_word(){
+    let current_word = "";
+    let longest_word = "";
+    let sentence = prompt('enter your sentence: ');
+
+    for (let i = 0; i < sentence.length ; i++){
+        let char = sentence[i];
+
+        if (char != " ")
+            current_word += char;
+        else{
+        // word ended → compare
+        if(current_word.length > longest_word.length){
+            longest_word = current_word;}
+        current_word="";
+        }
+    }
+
+    // check last word (if no trailing space)
+    if (current_word.length > longest_word.length) {
+        longest_word = current_word;
+    }
+    
+    alert(`your longest word is: ${longest_word}`);
+}
+
+
+//4.4
+function remove_repeated_chars(){
+    let unique = "";
+    let input = prompt('enter you chars: ');
+    for (let i = 0; i <input.length;i++){
+        if (!unique.includes(input[i]))
+            unique+= input[i];
+    }
+    alert(`your uniqe unrepeated characters are: ${unique}`);
+}
+
+
+
 
