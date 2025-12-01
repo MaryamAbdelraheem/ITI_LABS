@@ -1,0 +1,31 @@
+#red
+{
+   
+    background-color: red;
+    
+}
+#green
+{
+    background-color: green;
+    
+}
+#blue
+{
+ 
+    background-color: blue;
+    
+}
+
+div {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    
+
+}
+body
+{
+    flex-wrap: wrap;
+    display: flex;  
+    justify-content: center;
+}

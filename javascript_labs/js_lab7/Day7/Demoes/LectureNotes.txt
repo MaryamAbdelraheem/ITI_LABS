@@ -1,0 +1,10 @@
+Day1 : introduction  varaibles definitions
+        primitive data types
+        ES5 and ES6
+Day2 : Functions (declaration, expression, arrow)
+       Scoping
+Day3 : Language Objects (String, Number , Date, Math , Array)
+Day4 : OOP and BOM
+Day5 : DOM 
+Day6 : Events
+Day7 :  Modules and Promises
