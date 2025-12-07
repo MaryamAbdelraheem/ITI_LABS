@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Countries Card </title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Countries Card</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div id="text_box">
-    <label style="text-align: center;" for="text_input">Enter country name:</label>
-    <br>
-    <input type="text" name="text_input" id="text_input">
+    <label for="text_input">Enter country name:</label><br>
+    <input type="text" id="text_input" placeholder="e.g. Egypt">
     <button id="search_btn">Search</button>
 </div>
-    <div class="card" >
-        <div id="img"></div>
-        <div id="country"></div>
-        <div id=" content"></div>
-        <div id = "people"></div>
-        <div id="lang"></div>
-        <div id="currency"></div>
-    </div>
+
+<div id="cards-container"></div>
+
+<script src="code.js"></script>
 </body>
 </html>
+

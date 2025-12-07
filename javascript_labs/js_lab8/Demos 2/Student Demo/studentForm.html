@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-
+  
 <style>
         body {
             margin: 70px 300px;
@@ -34,7 +34,9 @@
             background-color: lightskyblue;
         }
     </style>
-
+        <script defer src="classes.js"></script>
+        <script defer src="functions.js"></script>
+        <script defer src="students.js"></script> 
     
 </head>
 <body>
@@ -53,16 +55,8 @@
             <tr><td>StudentGrade<input type="number" name="studentGrade" value="50" /></td><td><span id="gardeError">should be number</span></td></tr>
             
 			<tr><td><input type="button"  value="Add" /></td></tr>
-            
-           <tr>
-                <td colspan="2">
-                    Sort:
-                    <select>
-                        <option value="name">names</option>
-                        <option value="grade">grades</option>
-                    </select>
-                </td>
-            </tr>
+            <tr><td>Search<input type="text" name="searchTxt"  /></td><td><span id="gardeError">should be number</span></td></tr>
+           
             <tr>
                 <td colspan="2">
                     Filter:
@@ -78,7 +72,10 @@
             <table id="studentsData">
 
             </table>           
-        <script defer src="../task.js"></script>
+             
+            
+
+
 
 </body>
 </html>

@@ -1,57 +1,50 @@
-body
-{
-    flex-wrap: wrap;
-    display: flex;  
-    justify-content: center;
-}
-
-.card{
-    width: 300px;
-    height: 400px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    background-color: #f9f9f9; 
-}
-#text_box{
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
     text-align: center;
-    color: #333;
     margin: 20px;
-    display: block;
 }
 
+#text_box {
+    margin-bottom: 20px;
+}
 
-#img{
+#cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.country-card {
+    width: 320px;
+    height: 520px;
+    background: #eae8e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(211, 199, 199, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.country-card img {
     width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    
+    border-radius: 8px;
+    height: 250px;
 }
 
-#country, #content, #people, #lang, #currency{
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+.country-card h2 {
+    margin: 20px 0 5px 0;
+    font-size: 18px;
 }
-#country{
-    font-size: large;
-    font-weight: bold;
 
+.country-card p {
+    margin: 20px 0;
+    color: #555;
+    font-size: 14px;
 }
-#content{
-    font-size: medium;
-}
-#people{
-    font-size: small;
 
-}
-#lang,#currency{
-    font-size: small;
+.country-card h4 {
+    color: #999;
+    font-weight: normal;
+    margin: 20px 0;
 }
