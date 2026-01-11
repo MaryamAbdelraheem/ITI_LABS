@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <style>
+        .other_musics {
+            width: 830px;
+            height: 200px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        .other_musics table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .other_musics tr {
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .other_musics tr:nth-child(odd) {
+            background-color: #f5e7d3; /* beige */
+        }
+
+        .other_musics tr:nth-child(even) {
+            background-color: #8c8c8c; /* gray */
+        }
+
+        .other_musics td {
+            padding-left: 15px;
+            font-size: 18px;
+        }
+
+        .other_musics tr:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Audio -->
+    <audio id="myAudio" src="Super Mario Bros (NES) Music - Overworld Theme.mp3"></audio>
+
+    <!-- Player Container -->
+    <div style="
+        width: 800px;
+        height: 200px;
+        background-color: #f5e7d3;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        gap: 20px;
+        border: 1px solid black;
+    ">
+
+        <!-- Image -->
+        <img 
+            id="songImage"
+            src="./mario.png" 
+            alt="Mario"
+            style="width: 170px; height: 170px; object-fit: cover;"
+        >
+
+        <!-- Controls -->
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 15px;">
+
+            <!-- Time slider -->
+            <input 
+                type="range" 
+                id="timeRange" 
+                min="0" 
+                value="0" 
+                step="0.1"
+                style="width: 200px;"
+            >
+
+            <!-- Buttons + volume slider -->
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button onclick="playAudio()">play</button>
+                <button onclick="pauseAudio()">pause</button>
+                <button onclick="stopAudio()">stop</button>
+
+                <input 
+                    type="range" 
+                    id="volumeRange"
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="1"
+                    style="width: 250px;"
+                >
+            </div>
+
+        </div>
+    </div>
+    <!-- Other Musics -->
+    <div class="other_musics">
+        <table>
+         <tr data-audio="Super Mario Bros (NES) Music - Overworld Theme.mp3"
+            data-img="./mario.png">
+            <td>Super Mario</td>
+        </tr>
+
+        <tr data-audio="Subway-Surfers-Theme-Sound-Effect.mp3"
+            data-img="./subway.png">
+            <td>Subway Surfers</td>
+        </tr>
+
+        <tr data-audio="Bad Guy.mp3"
+            data-img="./bad_guy.png">
+            <td>Bad Guy</td>
+        </tr>
+
+        <tr data-audio="Mel Bedaya.mp3"
+            data-img="./mel_bedaya.png">
+            <td>Mel Bedaya</td>
+        </tr>
+        </table>
+    </div>
+
+    <script src="./audio.js"></script>
+
+</body>
+</html>
