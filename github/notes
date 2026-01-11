@@ -1,0 +1,88 @@
+github notes:
+------------
+
+
+task notes :
+-----------
+
+## 🔑 1. Create SSH Key and Put the Key in GitHub ----------------------------------------------------------------------
+
+| **1. Generate Key** | `ssh-keygen -t ed25519 -C "your_email@example.com"` | 
+                        Run this command in your terminal. Use your GitHub email address. Press **Enter** to accept the default file path and set a **passphrase** when prompted.|
+
+| **2. Start the Agent** | `eval "$(ssh-agent -s)"` | 
+                            This ensures the SSH agent is running in the background. |
+
+| **3. Add Key to Agent** | `ssh-add ~/.ssh/id_ed25519` | 
+                            Add your new private key to the agent. You'll be prompted for the passphrase you set in step 1. |
+
+| **4. Copy Public Key** | `cat ~/.ssh/id_ed25519.pub` | 
+                            Copy the **entire output** (which starts with `ssh-ed25519...` and ends with your email) to your clipboard. |
+
+| **5. Add to GitHub** | **GitHub** -> **Settings** -> **SSH and GPG keys** -> **New SSH key** | 
+                            Paste the copied public key into the "Key" field and give it a title (e.g., "My Laptop"). |
+
+| **6. Test Connection** | `ssh -T git@github.com` | 
+                            You should receive a welcome message confirming a successful connection. |
+
+-----
+
+## 💻 2. Local and Remote Repo Setup & Pushing ------------------------------------------------------------------------
+
+### **Part A: Local Setup and File Creation**
+
+| **1. Create Project Folder** | `mkdir my-full-name-project` | 
+                                    Creates a new directory for your project. |
+
+| **2. Navigate** | `cd my-full-name-project` |
+                    Moves you into the new directory. |
+
+| **3. Initialize Git** | `git init` |
+                             Initializes an **empty local Git repository**. |
+
+| **4. Create File** | `echo "Your Full Name" > name.txt` | 
+                            Creates a file named `name.txt` containing your full name. |
+
+| **5. Stage File** | `git add name.txt` | 
+                        Adds `name.txt` to the **staging area**. |
+
+| **6. Commit File** | `git commit -m "Initial commit with full name file"` | 
+                        Records the staged changes as a new commit in the **local repository**. |
+
+### **Part B: Remote Setup and Pushing** ---------------------<<<<<<<<<>>>>>>>>>------------------------
+
+
+| **7. Create Remote Repo** | **GitHub** -> **New repository** | 
+                                Create a new repository (e.g., `my-full-name-project`). **DO NOT** check the box to initialize with a README. Copy the **SSH URL** (starts with `git@github.com...`). |
+
+| **8. Link Local to Remote** | `git remote add origin <your-ssh-url>` | 
+                                Links your local repo to the remote one on GitHub, naming the remote connection **`origin`**. |
+
+| **9. Push Initial Commit** | `git push -u origin main` (or `master`) | 
+                                Pushes your local `main` branch content to the remote repository. The `-u` flag sets the remote branch as the default "upstream" tracking branch. |
+
+| **10. Invite Collaborator** | 
+                                    **GitHub Repo** -> **Settings** -> **Manage access** -> **Invite a collaborator** |
+                                     Send an invitation to the required username. |
+
+-----
+
+## 🌐 3. Host Your Project with GitHub Pages --------------------------------------------------------------------------
+
+| **1. Create HTML File** | `echo "<h1>Hello World! My GitHub Page</h1>" > index.html` | 
+                            Create a file named **`index.html`** in your project's root directory. This is the entry point for your website. |
+
+| **2. Add/Commit HTML** | `git add index.html`<br>`git commit -m "Add index.html for Pages"` | 
+                            Stage and commit the new HTML file locally. |
+
+| **3. Push Changes** | `git push origin main` (or `master`) | 
+                        Upload the new `index.html` file to your remote GitHub repository. |
+
+| **4. Configure Pages** | **GitHub Repo** -> **Settings** -> **Pages** | 
+                            Navigate to the GitHub Pages configuration area. |
+
+| **5. Select Source** | Under "Build and deployment," choose **`Deploy from a branch`**, select the **`main`** (or `master`) branch, and select the **`/root`** folder. | This tells GitHub which branch and folder to use for hosting. |
+
+| **6. Save and Wait** | Click **Save**. | GitHub will build and publish your site. After a few minutes, the Pages section will display your **live URL** (e.g., `https://your-username.github.io/repo-name/`). |
+
+
