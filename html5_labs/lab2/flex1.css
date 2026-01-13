@@ -17,7 +17,7 @@ div.navbar { /*.spec ---- */
     position: relative; /*parent layer*/
     background-color: white;
 }
-header.navbar::after /*.insider --- */ {
+div.navbar::after /*.insider --- */ {
     content: "";
     position: absolute; /*child layer*/
     left: 0;
