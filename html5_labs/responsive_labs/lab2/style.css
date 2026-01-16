@@ -1,0 +1,66 @@
+    body {
+      background-color: #f6f9fb;
+    }
+
+    .employee-card {
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.04);
+    }
+
+    /**---------------**/
+    .employee-card > .d-flex.justify-content-between.align-items-center {
+      width: 100% !important;
+    }
+
+    .status-active {
+      background-color: #e7f6ec;
+      color: #28a745;
+      font-size: 12px;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .info-box {
+      background: #f8fafc;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+    /*----------------------------------------------*/
+    .active-badge {
+  background-color: #16a34a; 
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.active-badge i {
+  font-size: 0.9rem;
+}
+
+.invited-badge {
+  background-color: #1f2933;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.paused-badge {
+  background-color: #9ca3af; 
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+
