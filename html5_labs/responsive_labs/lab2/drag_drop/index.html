@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Form Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-4 px-4">
+            <div class="row g-2">
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Single Selection">
+                        <i class="bi bi-grid-fill me-2"></i> Single Selection
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Single Selection Grid">
+                        <i class="bi bi-record-circle me-2"></i> Single Select Grid
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Multiple Selection">
+                        <i class="bi bi-check2-square me-2"></i> Multiple Selection
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Multiple Selection Grid">
+                        <i class="bi bi-grid-fill me-2"></i> Multiple Select Grid
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Short Text">
+                        <i class="bi bi-type me-2"></i> Short Text
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Rating">
+                        <i class="bi bi-star me-2"></i> Rating
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Message">
+                        <i class="bi bi-chat-fill me-2"></i> Message
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Long Text">
+                        <i class="bi bi-blockquote-left me-2"></i> Long Text 
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Drop Down">
+                        <i class="bi bi-caret-down me-2"></i> Drop Down 
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Slider">
+                        <i class="bi bi-sliders me-2"></i> Slider
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Ranking">
+                        <i class="bi bi-graph-up me-2"></i> Ranking
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Sum">
+                        <i class="bi bi-plus-circle me-2"></i> Sum
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                <div class="col-6">
+                    <div class="draggable-item shadow-sm" draggable="true" data-type="Numeric">
+                        <i class="bi bi-hash me-2"></i> Numeric
+                    </div>
+                </div>
+                <!------------------------------------------------->
+                </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="editor-page bg-white p-4 shadow-sm border rounded">
+                <h5 class="text-muted mb-4">Page 1</h5>
+                <div id="drop-zone" class="drop-zone border-primary d-flex align-items-center justify-content-center">
+                    <span class="text-primary fw-medium">Drag & drop your first question here</span>
+                </div>
+                <div id="questions-container" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="code.js"></script>
+</body>
+</html>
