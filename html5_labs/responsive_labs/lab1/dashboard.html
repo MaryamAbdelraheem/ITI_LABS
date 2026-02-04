@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+      crossorigin="anonymous"
+  >
+  <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="topbar d-flex align-items-center">
+
+    <!-- Left: Logo -->
+    <div class="logo-home d-flex align-items-center gap-3 px-4">
+      <i class="bi bi-house-fill text-white fs-5"></i>
+      <span class="text-white fw-semibold ms-1 d-none d-sm-inline">
+        Logo
+      </span>
+    </div>
+
+    <!-- Center: Navigation Icons -->
+    <div class="d-flex align-items-center gap-5 px-3">
+      <i class="bi bi-globe-americas text-white fs-5"></i>
+      <i class="bi bi-person-fill text-white fs-5"></i>
+      <i class="bi bi-envelope-fill text-white fs-5"></i>
+
+      <!-- Notification -->
+      <div class="position-relative">
+        <i class="bi bi-bell-fill text-white fs-5"></i>
+        <span class="badge bg-success rounded-circle position-absolute top-0 start-100 translate-middle">
+          3
+        </span>
+      </div>
+    </div>
+
+    <!-- Right: Profile -->
+    <div class="ms-auto px-4">
+      <i class="bi bi-person-circle text-white fs-4"></i>
+    </div>
+
+</nav>
+
+  <!-- Container -->
+  <div class="container-fluid">
+    <div class="row p-3 px-2 py-4 ">
+
+      <!-- Left Column -->
+      <div class="col-12 col-md-3 mb-3">
+        <div class="left-section d-flex flex-column gap-3">
+
+          <!-- Card 1: Profile -->
+          <div class="card text-center shadow-sm p-3 d-flex flex-column align-items-center">
+            <span class="fw-bold d-block mb-2">My Profile</span>
+            <img src="./asset/officer.png" alt="Profile" class="rounded-circle mb-3 img-fluid" style="width:80px; height:80px; object-fit:cover;">
+            <hr class="w-100">
+            <div class="d-flex flex-column gap-2 align-items-start w-100 px-2">
+              <span><i class="bi bi-pen me-2"></i>Designer, UI</span>
+              <span><i class="bi bi-house-fill me-2"></i>London, UK</span>
+              <span><i class="bi bi-cake2-fill me-2"></i>April 1, 1988</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Menu -->
+          <div class="card2 shadow-sm p-3 d-flex flex-column gap-2">
+            <span><i class="bi bi-circle me-2"></i> My Groups</span>
+            <span><i class="bi bi-calendar-check me-2"></i> My Events</span>
+            <span><i class="bi bi-people-fill me-2"></i> My Photos</span>
+          </div>
+
+          <!-- Card 3: Interests -->
+          <div class="card3 shadow-sm p-3">
+            <span class="fw-bold d-block mb-2">Interests</span>
+            <div class="d-flex flex-wrap gap-2">
+              <div class="color1">News</div>
+              <div class="color1">W3Schools</div>
+              <div class="color2">Labels</div>
+              <div class="color2">Games</div>
+              <div class="color2">Friends</div>
+              <div class="color2">Games</div>
+              <div class="color3">Friends</div>
+              <div class="color3 text-black">Food</div>
+              <div class="color4 text-black">Design</div>
+              <div class="color4 text-black">Art</div>
+              <div class="color4 text-black">Photos</div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card4 shadow-sm p-3 position-relative">
+
+            <!-- Delete X at top-right -->
+            <div class="delete-x d-flex justify-content-center align-items-center position-absolute" 
+                 style="top: 10px; right: 10px; width: 30px; height: 30px; background-color: #51616c; cursor: pointer;">
+              X
+            </div>
+
+            <h6>Hey!</h6>
+            <p>People are looking at your profile. Find out who.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Center Column -->
+      <div class="col-12 col-md-7 mb-3">
+        <div class="card3 d-flex flex-wrap search-part text-center shadow-sm p-3 mt-3">
+            <span class="fw-bold d-block mb-2"></span>
+            <p style="color:rgb(161, 152, 152);">Social Media template bt w3.css</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Status: Feeling Blue" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button class="p-2 text-white border" style="background-color: #51616c;"><i class="bi bi-pen-fill" ></i> Post</button>
+        </div>
+
+        <div class="card3 text-center shadow-sm p-3 mt-3">
+            <div class="part-1 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./asset/officer.png" alt="Profile" class="rounded-circle img-fluid" style="width:80px; height:80px; object-fit:cover;">
+                    <span class="fw-bold mb-0">John Doe</span>
+                </div>
+                <span class="text-muted">1 min</span>
+            </div>
+
+            <hr>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quasi neque quis ipsa hic labore provident nemo perspiciatis illo accusamus, officia voluptatibus fugit odio nostrum assumenda rem quam minus tempora.</p>
+            <div class="row g-2">
+                <div class="col-6">
+                    <img src="./asset/two.png" alt="" class="img-fluid ">
+                </div>
+                 <div class="col-6">
+                    <img src="./asset/two.png" alt="" class="img-fluid ">
+                </div>
+            </div>
+            <div class="d-flex gap-2 mt-3">
+                <button style="background-color: #51616c" class=" text-white btn btn-light d-flex align-items-center gap-1">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                <span>Like</span>
+                </button>
+                <button style="background-color: #51616c" class=" text-white btn btn-light d-flex align-items-center gap-1">
+                <i class="bi bi-chat-fill"></i>
+                <span>Comment</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card3 text-center shadow-sm p-3 mt-3">
+            <div class="part-1 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./asset/officer.png" alt="Profile" class="rounded-circle img-fluid" style="width:80px; height:80px; object-fit:cover;">
+                    <span class="fw-bold mb-0">John Doe</span>
+                </div>
+                <span class="text-muted">16 min</span>
+            </div>
+
+            <hr>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quasi neque quis ipsa hic labore provident nemo perspiciatis illo accusamus, officia voluptatibus fugit odio nostrum assumenda rem quam minus tempora.</p>
+            <div class="d-flex gap-2 mt-3">
+                <button style="background-color: #51616c" class=" text-white btn btn-light d-flex align-items-center gap-1">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                <span>Like</span>
+                </button>
+                <button style="background-color: #51616c" class=" text-white btn btn-light d-flex align-items-center gap-1">
+                <i class="bi bi-chat-fill"></i>
+                <span>Comment</span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="card3 text-center shadow-sm p-3 mt-3">
+            <div class="part-1 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./asset/officer.png" alt="Profile" class="rounded-circle img-fluid" style="width:80px; height:80px; object-fit:cover;">
+                    <span class="fw-bold mb-0">John Doe</span>
+                </div>
+                <span class="text-muted">32 min</span>
+            </div>
+
+            <hr>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quasi neque quis ipsa hic labore provident nemo perspiciatis illo accusamus, officia voluptatibus fugit odio nostrum assumenda rem quam minus tempora.</p>
+            <div>
+                <img  style="width: 90%;" src="./asset/two.png" alt="">
+            </div>
+            <div class="d-flex gap-2 mt-3">
+                <button style="background-color: #51616c" class=" text-white btn btn-light d-flex align-items-center gap-1">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                <span>Like</span>
+                </button>
+                <button style="background-color: #51616c" class=" text-white btn btn-light d-flex align-items-center gap-1">
+                <i class="bi bi-chat-fill"></i>
+                <span>Comment</span>
+                </button>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-12 col-md-2 mb-3">
+        <div class="card3 text-center shadow-sm p-3 d-flex flex-column align-items-center">
+            <span class="d-block mb-2" style="font-size: small;">Upcoming Events: 4</span>
+            <img src="./asset/two.png" alt="Profile" class="mb-3 img-fluid" style="width:90% ; height:85px; ">
+            <div class="d-flex flex-column gap-2 align-items-center w-100 px-2">
+              <span class="fw-bold ">Holiday</span>
+              <span>Friday 15:00</span>
+            </div>
+            <button class="p-1 border " style="width: 90%;">Info</button>
+        </div>
+
+        <div class="card3 text-center shadow-sm p-3 d-flex flex-column align-items-center">
+            <span class="d-block mb-2" style="font-size: small;">Friend Request</span>
+            <img src="./asset/woman.png" alt="Profile" class="mb-3 img-fluid" style="width:70% ; height:85px; ">
+            <span class="d-block mb-2" style="font-size: small;">John Doe</span>
+            <div class="d-flex" style="width: 90%;">
+                <button class="p-1 border " style="width: 50%; background-color: rgb(178, 228, 178);">Info</button>
+                <button class="p-1 border " style="width: 50%; background-color: rgb(238, 170, 170);">Info</button>
+            </div>
+        </div>
+
+        <div class="card3 text-center shadow-sm p-3 mt-3">
+            <span class="d-block mb-2">ADS</span>
+        </div>
+        
+        <div class="card3 text-center shadow-sm p-3 mt-3">
+            <i class="bi bi-bug-fill"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="mt-4">
+
+  <!-- Top part: 75% height -->
+  <div class="footer-top w-100" style="background-color: #51616c; height: 75px;">
+    <div class="container h-100 d-flex align-items-center justify-content-start text-white">
+      <span>Footer</span>
+    </div>
+  </div>
+
+  <!-- Bottom part: 25% height -->
+  <div class="footer-bottom w-100" style="background-color: #3d5156; height: 25px;">
+    <div class="container h-100 d-flex align-items-center justify-content-start text-white small">
+      <span class="text-start">powered by w3.css</span>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+.draggable-item {
+    background: white;
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: grab;
+    font-size: 0.9rem;
+    color: #495057;
+    transition: all 0.2s ease;
+}
+
+.draggable-item:hover {
+    border-color: #0d6efd;
+    background-color: #f8f9fa;
+}
+
+.draggable-item:active {
+    cursor: grabbing;
+}
+
+.editor-page {
+    min-height: 500px;
+    border-color: #e9ecef !important;
+}
+
+.drop-zone {
+    height: 100px;
+    border: 2px dashed #cfe2ff;
+    border-radius: 8px;
+    background-color: #f8fbff;
+    transition: background-color 0.2s;
+}
+
+.drop-zone.drag-over {
+    background-color: #e7f1ff;
+    border-style: solid;
+}
+
+.added-question {
+    padding: 15px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #fff;
+}

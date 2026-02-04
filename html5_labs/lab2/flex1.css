@@ -1,0 +1,144 @@
+/*----------------------------------------*/
+/* navbar section ------------------------*/
+/*----------------------------------------*/
+/* 1.design--------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*--------------------------------------*/
+div.navbar { /*.spec ---- */        
+    position: relative; /*parent layer*/
+    background-color: white;
+}
+div.navbar::after /*.insider --- */ {
+    content: "";
+    position: absolute; /*child layer*/
+    left: 0;
+    top: 100%;            
+    width: 100%;
+    height: 20px;
+    background-color: #d2d2d2;
+}
+/*--------------------------------------*/
+
+.navbar {
+    border-bottom: 3px solid #e74c3c;
+    padding: 20px 40px;
+}
+
+/*2.flex application--------*/
+.navbar nav {
+    display: flex;              
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*----------------------------------------*/
+/* Cards Section ------------------------ */
+/*----------------------------------------*/
+/*1.design--------------- */
+.card {
+    width: 350px;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    padding: 30px;
+
+
+    /*2.1 inner flex on the cards*/
+    display: flex;                  
+    flex-direction: column;         /* vertical layout */
+    justify-content: space-between; /* push button down */
+    text-align: center;
+    gap: 20px;                      /* space between elements */
+}
+
+.card button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*2.flex application--------*/
+.cards-section {
+    display: flex;                 
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+
+/*----------------------------------------*/
+/* Features Section ------------------------ */
+/*----------------------------------------*/
+/* 1.design--------------- */
+/*1.1 base*/
+.features {
+    background-color: #2c3e50;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.features h2 {
+    color: #e74c3c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.features .subtitle {
+    color: #e4e0e0;
+    margin-bottom: 50px;
+}
+/*1.2 cards*/
+.feature-card {
+    background-color: white;
+    width: 220px;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    /*2.1 inner flex on the cards*/
+    /*+++++++++++++++++++++*/
+    display: flex;              
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*1.3 shapes (circle icon) */
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.feature-card p {
+    color: #989898;
+    font-size: 14px;
+}
+
+
+/*2.flex application--------*/
+
+/*2.2 out flex */
+.features-container {
+    display: flex;                  
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;                
+}
